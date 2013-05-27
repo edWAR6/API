@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee7b102afa18419fb78e2c32dd104edd" Name="Diagram1">
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.P_Notas" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.P_NotasPublicas" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.P_Personas" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.R_Cursos" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.R_Estudiantes" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.R_RegistroNotas" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.VR_Rendimiento_A_Academ" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGA_DesarrolloModel.VR_Rendimiento_Periodos" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="SGA_DesarrolloModel.FK_P_Notas_P_Personas" ManuallyRouted="false" />
+        <AssociationConnector Association="SGA_DesarrolloModel.FK_R_Estudiantes_P_Personas" ManuallyRouted="false" />
+        <AssociationConnector Association="SGA_DesarrolloModel.FK_R_RegistroNotas_R_Cursos" ManuallyRouted="false" />
+        <AssociationConnector Association="SGA_DesarrolloModel.FK_R_RegistroNotas_R_Estudiantes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
