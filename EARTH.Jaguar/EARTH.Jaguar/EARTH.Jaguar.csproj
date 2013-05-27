@@ -212,6 +212,7 @@
       <DependentUpon>SGAModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Encryption.cs" />
     <Compile Include="Security\Impersonate.cs" />
   </ItemGroup>
   <ItemGroup>
