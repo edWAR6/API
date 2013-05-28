@@ -6,10 +6,10 @@
 
 body {
     background-color: #fff;
-    border-top: solid 10px #000;
+    border-top: solid 10px #F47727;
     color: #333;
     font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-family: "Century Gothic";
     margin: 0;
     padding: 0;
 }
@@ -107,11 +107,11 @@ h5, h6 {
     .main-content {
         background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
-        padding-top: 30px;
+        padding-top: 105px;
     }
 
     .featured + .main-content {
-        background: url("../Images/heroAccent.png") no-repeat;
+        background: url("../Images/earth_big.png") no-repeat;
     }
 
 header .content-wrapper {
@@ -130,7 +130,7 @@ footer {
 ----------------------------------------------------------*/
 .site-title {
     color: #c8c8c8;
-    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    /*font-family: Rockwell, Consolas, "Courier New", Courier, monospace;*/
     font-size: 2.3em;
     margin: 0;
 }
@@ -213,7 +213,7 @@ ul#menu {
 }
 
     .featured .content-wrapper {
-        background-color: #7ac0da;
+        background-color: #74B348;
         background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));

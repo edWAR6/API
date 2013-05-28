@@ -37,10 +37,9 @@ namespace EARTH.Jaguar.Controllers
                 HttpError error = new HttpError(dse.Message.Replace("\n", " ").Replace("\r", " ").Replace("\t", " "));
                 return Request.CreateResponse(HttpStatusCode.Unauthorized, error);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                HttpError error = new HttpError(ex.Message.Replace("\n", " ").Replace("\r", " ").Replace("\t", " ") + ((ex.InnerException != null)? ex.InnerException.ToString().Replace("\n", " ").Replace("\r", " ").Replace("\t", " ") : "..."));
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, error);
+                throw;
             }
             finally
             {
@@ -54,7 +53,7 @@ namespace EARTH.Jaguar.Controllers
             
             using (SGA_DesarrolloEntities context = new SGA_DesarrolloEntities())
             {
-                valid = context.P_Personas.Count(p => p.usuario == model.UserName) > 0;
+                valid = context.P_Personas.Count(p => p.login_red == model.UserName) > 0;
                 if (valid)
                 {
                     DirectoryEntry entry = new DirectoryEntry("LDAP://" + ConfigurationManager.AppSettings["Domain"].ToString(), model.UserName, model.Password);
